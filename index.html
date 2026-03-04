@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İyi ki Doğdun Aşkım ❤️</title>
+<style>
+body {
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    text-align:center;
+    color:white;
+    overflow-x:hidden;
+}
+.section {
+    padding:60px 20px;
+}
+h1 {
+    font-size:28px;
+}
+img {
+    width:85%;
+    max-width:320px;
+    border-radius:20px;
+    margin:15px 0;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+button {
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#ff4e78;
+    font-weight:bold;
+    cursor:pointer;
+}
+.hidden {
+    display:none;
+}
+</style>
+</head>
+<body>
+
+<div class="section">
+    <h1>🎉 İyi ki Doğdun Aşkım 🎉</h1>
+    <p>Hayatıma girdiğin en güzel gün... ❤️</p>
+</div>
+
+<div class="section">
+    <h2>Bizim Anılarımız 📸</h2>
+    <img src="foto1.jpg">
+    <img src="foto2.jpg">
+</div>
+
+<div class="section">
+    <button onclick="mesajGoster()">Sürprizi Aç 🎁</button>
+    <p id="mesaj" class="hidden">
+        Sen benim en güzel hikayemsin.  
+        İyi ki doğdun, iyi ki varsın ❤️
+    </p>
+</div>
+
+<script>
+function mesajGoster() {
+    document.getElementById("mesaj").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
